@@ -1,13 +1,13 @@
-// Replace with your Firebase project settings
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "your-project.firebaseapp.com",
-    databaseURL: "https://your-project.firebaseio.com",
-    projectId: "your-project",
-    storageBucket: "your-project.appspot.com",
-    messagingSenderId: "XXXXXXX",
-    appId: "YOUR_APP_ID"
-  };
-  
-  firebase.initializeApp(firebaseConfig);
-  
+  apiKey: "AIzaSyCKXtaaGE2tSS1k4pQ6rh5YbQIqSmtjd5U",
+  authDomain: "augies-flashcard.firebaseapp.com",
+  projectId: "augies-flashcard",
+  storageBucket: "augies-flashcard.appspot.com",
+  messagingSenderId: "510672765453",
+  appId: "1:510672765453:web:7eb257a6cb0567a94e0b44",
+  measurementId: "G-SZ90MY29HS"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
