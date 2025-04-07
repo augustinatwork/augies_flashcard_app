@@ -1,7 +1,7 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <title>Flashcard Login</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,14 +19,22 @@
     <button onclick="signup()">Sign Up</button>
   </div>
 
-  <!-- Firebase v8 SDKs -->
+  <div id="flashcard-form" style="display: none;">
+    <h2>Create Flashcard</h2>
+    <input type="text" id="flashcard-question" placeholder="Question"><br>
+    <input type="text" id="flashcard-answer" placeholder="Answer"><br>
+    <input type="file" id="flashcard-image" accept="image/*"><br>
+    <button onclick="addFlashcard()">Add Flashcard</button>
+    <button onclick="exportPDF()">Export as PDF</button>
+
+    <h3>Preview</h3>
+    <div id="flashcards-preview"></div>
+  </div>
+
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-
-  <!-- Firebase config -->
   <script src="firebase-config.js"></script>
-
-  <!-- App logic -->
   <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 </html>
