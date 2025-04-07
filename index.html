@@ -18,18 +18,20 @@
     <input type="password" id="signup-password" placeholder="Password">
     <button onclick="signup()">Sign Up</button>
   </div>
+<!-- Flashcard Form -->
+<div id="flashcard-form" style="display:none;">
+  <h2>Add Flashcard</h2>
+  <input type="text" id="flashcard-question" placeholder="Question"><br>
+  <input type="text" id="flashcard-answer" placeholder="Answer"><br>
+  <input type="file" id="flashcard-image" accept="image/*"><br>
+  <button onclick="addFlashcard()">Add Flashcard</button>
+  <button onclick="exportPDF()">Export as PDF</button>
 
-  <div id="flashcard-form" style="display: none;">
-    <h2>Create Flashcard</h2>
-    <input type="text" id="flashcard-question" placeholder="Question"><br>
-    <input type="text" id="flashcard-answer" placeholder="Answer"><br>
-    <input type="file" id="flashcard-image" accept="image/*"><br>
-    <button onclick="addFlashcard()">Add Flashcard</button>
-    <button onclick="exportPDF()">Export as PDF</button>
+  <h3>Flashcards Preview</h3>
+  <div id="flashcards-preview"></div>
+</div>
 
-    <h3>Preview</h3>
-    <div id="flashcards-preview"></div>
-  </div>
+  
 
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
